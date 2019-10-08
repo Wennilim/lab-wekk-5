@@ -1,0 +1,41 @@
+// ConsoleApplication6.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+#include<string>
+using namespace std;
+
+
+int main()
+{	
+	string name;
+	cout << "please enter your name: ";
+	//cin >> name;
+	getline(cin, name);//is function in <string>
+	cout << "name: \a" << name << endl;
+
+	int x;
+	cout << "please enter value of x:";
+	cin >> x;
+	if (x <= 5)
+		cout << "The value is less than 6! \a" << endl;
+	else
+		cout << "The value of x is more than 6! \a" << endl;
+
+	int z;
+	cout << "please enter value of z: ";
+	cin >> z;
+	if (z <= 0)
+		cout << "INVALID VALUE! \a\a\a" << endl;
+	else if (z >= 40)
+		cout << "you are passed your exam! \a "<<endl;
+	else
+		cout << "you are failed your exam! \a"<<endl;
+
+	
+    return 0;
+}
+
